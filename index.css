@@ -1,0 +1,126 @@
+/* Reset basic */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #fafafa;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .logo h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 24px;
+}
+
+.header-icons span {
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Stories */
+.stories {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.stories::-webkit-scrollbar {
+    display: none;
+}
+
+.story {
+    flex: 0 0 auto;
+    width: 70px;
+    height: 70px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Feed Posts */
+.feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.post {
+    width: 400px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.post-header {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.post-image img {
+    width: 100%;
+    display: block;
+}
+
+.post-actions {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.post-actions span {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.liked {
+    color: red;
+}
+
+.post-likes {
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.post-caption {
+    padding: 0 10px 10px 10px;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 420px;
+}
